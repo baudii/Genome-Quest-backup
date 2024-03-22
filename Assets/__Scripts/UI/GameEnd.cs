@@ -58,6 +58,7 @@ public class GameEnd : MonoBehaviour
                 currentMessage.SetActive(false);
             message.SetActive(true);
             currentMessage = message;
+            yield return new WaitForSeconds(0.5f);
             yield return new WaitUntil(() => Input.anyKeyDown);
             yield return null;
         }

@@ -1,5 +1,3 @@
-using Newtonsoft.Json.Serialization;
-using OpenAI;
 using System;
 using System.Collections.Generic;
 using TMPro;
