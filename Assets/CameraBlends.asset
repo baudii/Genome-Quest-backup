@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36baaa8bdcb9d8b49b9199833965d2c3, type: 3}
+  m_Name: CameraBlends
+  m_EditorClassIdentifier: 
+  m_CustomBlends:
+  - m_From: CabinetCamera
+    m_To: HallwayCameraL
+    m_Blend:
+      m_Style: 1
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: HallwayCameraL
+    m_To: PatientCamera
+    m_Blend:
+      m_Style: 1
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0.6992231
+          outSlope: 0.6992231
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.124868475
+        - serializedVersion: 3
+          time: 0.56726354
+          value: 0.50459826
+          inSlope: 3.7189963
+          outSlope: 3.7189963
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.15778832
+        - serializedVersion: 3
+          time: 0.7108274
+          value: 0.91388
+          inSlope: 0.9744835
+          outSlope: 0.9744835
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.22191787
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: -0
+          outSlope: -0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.994216
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+  - m_From: PatientCamera
+    m_To: HallwayCameraL
+    m_Blend:
+      m_Style: 1
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: HallwayCameraL
+    m_To: CabinetCamera
+    m_Blend:
+      m_Style: 1
+      m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: IntroCamera
+    m_To: CabinetCamera
+    m_Blend:
+      m_Style: 7
+      m_Time: 7
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.50699866
+          value: 0.50646746
+          inSlope: 2.748575
+          outSlope: 2.748575
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.07877198
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0.03179995
+          outSlope: 0.03179995
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.37083334
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+  - m_From: HallwayCameraR
+    m_To: HallwayCameraL
+    m_Blend:
+      m_Style: 2
+      m_Time: 0.8
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.50699866
+          value: 0.50646746
+          inSlope: 2.748575
+          outSlope: 2.748575
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.07877198
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0.03179995
+          outSlope: 0.03179995
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.37083334
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+  - m_From: HallwayCameraL
+    m_To: HallwayCameraR
+    m_Blend:
+      m_Style: 2
+      m_Time: 0.8
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.50699866
+          value: 0.50646746
+          inSlope: 2.748575
+          outSlope: 2.748575
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.07877198
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0.03179995
+          outSlope: 0.03179995
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.37083334
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0

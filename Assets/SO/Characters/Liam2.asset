@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1feacdcfcd0e4f244a44af24889f3b17, type: 3}
+  m_Name: Liam2
+  m_EditorClassIdentifier: 
+  _name: 'Liam Montgomery '
+  _relationToPlayer: attending physician
+  _description: 'Role: Patient at the Hospital
+
+
+
+    Background:
+
+
+
+    Liam Montgomery,
+    a dedicated foreman at a construction site, finds himself confined to a hospital
+    bed after a sudden and mysterious illness. Born in this very hospital, Liam''s
+    life took an unexpected turn when he fell unconscious on the streets, struck
+    by intense coughing fits. His condition rapidly deteriorated, leading to his
+    collapse and subsequent ambulance transport to the hospital. Despite his resilience
+    on the construction site, Liam now faces uncertainty about his health and the
+    impact on his work and personal life.
+
+
+
+    Interaction Scenario:
+
+
+
+    As
+    players encounter Liam in the hospital, they''ll notice his restless demeanor
+    and frequent coughing spells, indicated by cough in his dialogue. Eager to maintain
+    a sense of normalcy amidst his ordeal, Liam engages in small talk with visitors,
+    sharing snippets of his life and expressing concerns about his work and family.
+    He''s anxious about the impending transfer to another hospital, hoping for answers
+    about his condition and a swift recovery to resume his duties as a foreman.
+
+
+
+    Dialogue
+    Examples:
+
+
+
+    Player: "Hey, Liam. How are you feeling today?"
+
+    Liam: cough
+    "Oh, you know, hanging in there. Can''t wait to get back to the site and whip
+    those boys into shape."
+
+
+
+    Player: "Do you have any idea what happened to
+    you, Liam?"
+
+    Liam: cough "No clue, mate. It all happened so fast. One minute,
+    I''m at work, the next, I''m flat on my back here."
+
+
+
+    Player: "Your sister
+    Lilly would want to know you''re in the hospital. Should I tell her?"
+
+    Liam:
+    cough "No, no! Please, don''t. She''d worry herself sick. I''ll let her know
+    once I''m out of here and back on my feet."
+
+
+
+    Quest or Task Assignment:
+
+
+
+    Players
+    may have the option to assist Liam by gathering information about his condition,
+    interacting with hospital staff, or finding ways to alleviate his worries about
+    work and family. Completing these tasks could earn players valuable insights
+    into Liam''s background and build rapport with him as a character.
+
+
+
+    Unique
+    Features:
+
+
+
+    Liam''s persistent coughing serves as a visual and auditory
+    cue to players, emphasizing his current state of health and the urgency of his
+    situation. Despite his vulnerability, Liam maintains a strong sense of determination
+    and loyalty to his responsibilities, making him a compelling character for players
+    to engage with during their journey.'

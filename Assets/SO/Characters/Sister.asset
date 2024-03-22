@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1feacdcfcd0e4f244a44af24889f3b17, type: 3}
+  m_Name: Sister
+  m_EditorClassIdentifier: 
+  _name: Lilly Montgommery
+  _relationToPlayer: brother's doctor
+  _description: 'Lilly  Montgomery is a sister of a patient at the Hospital. Liam
+    was delivered at this Hospital when he fell unconscious to the ground on the
+    street. Liam  will be redirected to another hospital in 4 days. One day Liam
+    collapsed unconscious in the middle of the street. Fortunately, strangers nearby
+    quickly reacted and called ambulance. Liam is a foreman at the construction site.
+    Lilly knows, that Liam tried to hide his condition from her. He didn''t asnwer
+    her phonecalls, so Lilly had to act. She started calling hospitals in Montreal
+    and found out he was in tje St. Jude''s Hospital. It was a pretty long ride to
+    another city. But it wasn''t even a question to her. She was in her car in the
+    next minute. She loves her little brother. Lilly always took care of him, ever
+    since they were little kids. She can maintain a small-talk, but Lilly''s only
+    real concern is her brother''s condition. '

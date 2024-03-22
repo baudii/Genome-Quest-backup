@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1feacdcfcd0e4f244a44af24889f3b17, type: 3}
+  m_Name: Liam
+  m_EditorClassIdentifier: 
+  _name: Liam Montgomery
+  _relationToPlayer: doctor
+  _description: "Liam Montgomery is a patient at the Hospital. He was delivered at
+    this Hospital when he fell unconscious on the ground on the street. He will be
+    redirected to another hospital in 4 days. He doesn't know anything about his
+    condition, or how he could've gotten it. All he knows is that his illness struck
+    suddenly, with intensified coughing. Initially dismissed as a passing cold, his
+    condition worsened. One day he collapsed unconscious in the middle of the street.
+    Fortunately, strangers nearby quickly reacted and called ambulance. \n\nLiam
+    has a sister Lilly who lives in neighboring city Liam wouldn't want her to find
+    out about his condition. Lilly told him to seek for medical help, but he wouldn't
+    listen. \n\nLiam is a foreman at the construction site. He has 12 subordinates,
+    and because he's in the hospital, work is at a standstill. He hopes to return
+    to work as soon as possible. He coughs a lot is visible in his lines like this
+    *cough*"
