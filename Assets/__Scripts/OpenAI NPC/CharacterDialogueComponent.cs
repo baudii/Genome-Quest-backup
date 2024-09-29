@@ -1,21 +1,17 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using OpenAI;
-using TMPro;
 using System.Threading.Tasks;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System;
 using UnityEngine.Events;
-using UnityEngine.UIElements;
 
 public class CharacterDialogueComponent : MonoBehaviour
 {
     [SerializeField] bool testRequest;
     [SerializeField] CharacterDialogueComponent sameNPCinFutureDay;
     [SerializeField] ContextAction[] contextActions;
-    [SerializeField] SO_CharacterInfo characterInfo;
+    [SerializeField] SO_Character c;
     [SerializeField, TextArea(10,40)] string instructionForDay;
     OpenAIApi openai = new OpenAIApi();
     List<ChatMessage> messages;
@@ -24,7 +20,6 @@ public class CharacterDialogueComponent : MonoBehaviour
     string instructions;
     string daySpecificContext;
     bool daySpecificInstructionsSent;
-    string liamsCondition;
     void Start()
     {
         if (testRequest)
@@ -34,14 +29,19 @@ public class CharacterDialogueComponent : MonoBehaviour
         }
 
         messages = new List<ChatMessage>();
-        context = $"Character description: {characterInfo._description}";
+        context = $"Context: You are playing a character of a game called Genome Quest. This game is similar to detective genre. The difference is that instead of solving a riddle of a crime, player" +
+            $" must find the correct set of treatment for the new patient in the Hospital. Patient's name is Liam Montgommery. Player's job is find clues in dialogues with different characters. " +
+            $"Every character has their clues that must be naturally delivered to the player in dialogue." +
+            $" Clues that should be transferred to the player will be tagged with a word \"Clue\". Examples: 1) \"Clue: Liam had chest pain this morning\", 2) \"Clue: Liam's testosterone level fell way lower than expected\"" +
+            $" 3) \"Clue: Liam doesn't want her sister to find out about his disease\". Your job is to play character {c.Name}. Character description: {c.Description}.\n If some information is missing in the description" +
+            $", you should ";
 /*        instructions = "###Instructions: You are pretending to be " + characterInfo._name + ". I am Dr. Lee. You must limit your knowledge to the knowledge of " + characterInfo._name
             + " within the give context.\n Assess the incoming message on a scale of 1 to 4. Where: \n1) Message is nonsensical, has no meaning\n2) Message is conceivable, but was it was addressed to the AI and not {" + "\n3) Message is conceivable and was addressed to the character, " +
             "but has typos that can be decoded\n4) Message " +
             "was addressed to the character and has no typos\nMessage that must be evaluated will be tagged like this: \"<msg>:\". " +
             "In your response, include your assessment exactly as a first symbol and then the content of response. It must look exactly like this example: \"1the content of response\"";*/
-        instructions = $"Instructions: You are pretending to be game character {characterInfo._name}. Player is Dr. Lee. Your relationship with player: he is your {characterInfo._relationToPlayer}. " +
-            $"You must limit your knowledge to the knowledge of {characterInfo._name} within the given context. " +
+        instructions = $"Instructions: You are pretending to be game character {c.Name}. Player is Dr. Lee. Your relationship with player: he is your {c.RelationshipWithPlayer}. " +
+            $"You must limit your knowledge to the knowledge of {c.Name} within the given context. " +
             $"You can support small-talk. If user greets you, you must greet him back. If he agrees with you, you must generate random response within a context\n" +
             $"Assess the incoming message on this scale of 1 to 5:" +
             $"1: message is good and mostly in context of the game world," +
@@ -79,10 +79,11 @@ public class CharacterDialogueComponent : MonoBehaviour
             message = "<msg>:" + message;
 
         var chatMessage = new ChatMessage() { Role = "user", Content = message };
-
+        int tokens = 200;
         if (messages.Count == 0)
         {
             chatMessage.Content = context + "\n" + daySpecificContext + "\n" + instructions + "\n" + message;
+            tokens = 500;
         }
         else if (!daySpecificInstructionsSent)
         {
@@ -96,7 +97,7 @@ public class CharacterDialogueComponent : MonoBehaviour
         {
             Model = "gpt-3.5-turbo",
             Messages = messages,
-            MaxTokens = 200,
+            MaxTokens = tokens,
             Temperature = temperature
         });
 

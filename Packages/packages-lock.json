@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "com.srcnalt.openai-unity": {
-      "version": "file:C:/Users/Хожик/Downloads/OpenAI-Unity-master (1)/OpenAI-Unity-master",
+      "version": "https://github.com/srcnalt/OpenAI-Unity.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.2.1"
-      }
+      },
+      "hash": "95503471ac85848ba0d85b597419b1303fbb2c01"
     },
     "com.unity.2d.animation": {
       "version": "5.0.10",
@@ -14,8 +15,8 @@
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "4.0.4",
-        "com.unity.mathematics": "1.1.0",
         "com.unity.2d.sprite": "1.0.0",
+        "com.unity.mathematics": "1.1.0",
         "com.unity.modules.animation": "1.0.0",
         "com.unity.modules.uielements": "1.0.0"
       },
@@ -51,8 +52,8 @@
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "4.0.4",
-        "com.unity.2d.animation": "5.0.10",
-        "com.unity.2d.sprite": "1.0.0"
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.2d.animation": "5.0.10"
       },
       "url": "https://packages.unity.com"
     },
@@ -67,9 +68,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.mathematics": "1.1.0",
-        "com.unity.2d.common": "4.0.4",
         "com.unity.2d.path": "4.0.2",
+        "com.unity.2d.common": "4.0.4",
+        "com.unity.mathematics": "1.1.0",
         "com.unity.modules.physics2d": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -92,8 +93,8 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.0",
-        "com.unity.services.core": "1.0.1"
+        "com.unity.services.core": "1.0.1",
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -177,9 +178,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"
