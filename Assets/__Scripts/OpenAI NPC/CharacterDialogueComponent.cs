@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using OpenAI;
 using System.Threading.Tasks;
 using System;
-using UnityEngine.Events;
 
 public class CharacterDialogueComponent : MonoBehaviour
 {
@@ -291,10 +290,4 @@ public class CharacterDialogueComponent : MonoBehaviour
                 contextAction.action?.Invoke();
         }
     }
-}
-[Serializable]
-public class ContextAction
-{
-    public string[] contextKeywords;
-    public UnityEvent action;
 }
